@@ -1,1 +1,335 @@
 
+<script>
+$(window).on('resize', function() {
+    if($(window).width() > 900) {
+        $('#list').addClass('h3');
+        $('#list').removeClass('h4');
+        $('#list1').addClass('h3');
+        $('#list1').removeClass('h4');
+        $('#list2').addClass('h3');
+        $('#list2').removeClass('h4');
+        $('#list3').addClass('h3');
+        $('#list3').removeClass('h4');
+        $('#list4').addClass('h3');
+        $('#list4').removeClass('h4');
+    }else{
+        
+        $('#list').removeClass('h3');
+        $('#list').addClass('h4');
+        $('#list1').removeClass('h3');
+        $('#list1').addClass('h4');
+        $('#list2').removeClass('h3');
+        $('#list2').addClass('h4');
+        $('#list3').removeClass('h3');
+        $('#list3').addClass('h4');
+        $('#list4').removeClass('h3');
+        $('#list4').addClass('h4');
+    }
+})
+</script>
+
+<!----Hero Section--->
+ <div class="container-fluid above2thou at1000" id="myPage" style="padding:0; position:relative;border-top:none;">
+  <img id="my-img" src="assets/hero1.png"  alt="Nature" class="responsive a480p"/>
+    <img id="my-img" src="assets/hero2.png"  alt="Nature" class="responsive b480p"/>
+   <div class="top-right text-center">
+       <h1 class="hero-text ">Direct Family Services</h1>
+    <h1 class="hero-number ">866-950-3506</h1>
+           <h1 class="hero-text" style="padding:10px;">Documents prepared for $250 Flat!</h1>
+     <div class = "btn-group-vertical btn-group-nd">
+              <%= link_to 'Request Assistance', "#", class: "btn btn-lg btn-primary bw" %>
+    </div>
+   </div>
+ </div>
+            
+<!--------smaller screen sign in section----->
+        <div class = "container">
+        <p class=" text-center under-hero-font" style="color:black"><b>Documents prepared for $250 Flat!</b></p>
+        <div class="container" >
+     <%= link_to 'Request Assistance', "#", class: "btn btn-primary btn-lg btn-block" %>
+     
+    </div>
+  </div>
+
+<!-- Container (About Section) -->
+<div class="container-fluid" style="padding-right:50px;padding-left:50px;">
+       <p class="h2 text-center" style="border-bottom:solid;padding-bottom:50px;">Affordable Family Law help</p>
+  <div class="row">
+    <div class="col-xl-6 " >
+     <br>
+        <h2 class="h2 text-center " style="padding-bottom:20px;">How it works:</h2>
+            <div>
+            <ul class="list-group">
+        
+        <li class="list-group-item"><span id="list" class="h3"><span class="glyphicon glyphicon-pencil circle-icon "></span>We gather your information. </span></li>
+           
+    <li class="list-group-item"> <span id="list1" class="h3"> <span class="glyphicon glyphicon-check circle-icon"></span>We prepare your documents.  </span></li>
+ 
+ 
+   <li class="list-group-item"><span id="list2" class="h3"><span class="glyphicon glyphicon glyphicon-folder-open circle-icon"></span> We help you file them. </span></li>
+   
+    <li class="list-group-item"><span id="list3" class="h3"><span class="glyphicon glyphicon-earphone circle-icon"></span> We stand by as your documents move through the court system.</span></li>
+   
+    <li class="list-group-item"> <span id="list4" class="h3"><span class="glyphicon glyphicon-hand-right circle-icon"></span> We guide you through every step of the way.</span></li>
+             
+             
+    
+  </ul>
+    </div>
+               
+    </div>
+    
+    <div class="col-xl-6" >
+ 
+       <div class="embed-responsive embed-responsive-16by9 video-top" >
+   <iframe src="https://player.vimeo.com/video/602303175?h=6007183b0d" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  
+  </div>
+    </div>
+  </div>
+ <div class=" text-center " style="padding-bottom:20px;" >  <%= link_to 'Get in Touch', "#", class: "btn btn-primary btn-lg bw2" %> </div>
+</div>
+
+
+<!-- Container (Services) -->
+<div id="portfolio" class="container-fluid text-center "style="background-color:#9bb7d4;">
+  <h1>WE PREPARE DOCUMENTS FOR</h1><br>
+  
+  <div class="row text-center ">
+      <div class="col-md-4">
+      <a href=<%= "#" %>> <div class="thumbnail">
+    <div class="centered h2" style="top:20%">CHILD CUSTODY</div>
+      <img src="assets/childcustody.png"  class="img-rounded" alt="San Francisco" width="200" height="100"  >
+       </div></a>
+       </div>
+        
+        <div class="col-md-4">
+         <a href=<%="#"%>> <div class="thumbnail" >
+        <div class="centered h2"style="top:7%">VISITATION</div>
+      <img src="assets/visitation.png" class="img-rounded" alt="San Francisco" width="200" height="100"  >
+       </div></a>
+       </div>
+        
+        <div class="col-md-4">
+         <a href=<%= "#" %>> <div class="thumbnail" >
+        <div class="centered h2"style="color:black;top:20%;">DIVORCE</div>
+       <img src="assets/divorce.png"  class="img-rounded" alt="San Francisco" width="200" height="100"  >
+       </div></a>
+       </div>
+    </div>
+      
+       <div class="row">
+        <div class="col-md-4">
+         <a href=<%= "#" %>> <div class="thumbnail" >
+        <div class="centered h2"style="left:40%">RESPONSES</div>
+      <img src="assets/responses.png"  class="img-rounded" alt="San Francisco" width="200" height="100"  >
+       </div></a>
+       </div>
+        
+        <div class="col-md-4">
+         <a href=<%= "#" %>>  <div class="thumbnail" >
+        <div class="centered h2" style="top:12%; left:47%;">CHILD SUPPORT</div>
+      <img src="assets/childsupport.png" class="img-rounded" alt="San Francisco" width="200" height="100"  >
+       </div></a>
+       </div>
+    
+             <div class="col-md-4">
+         <a href=<%= "#" %>>  <div class="thumbnail bg-image hover-overlay ripple shadow-1-strong rounded" >
+        <div class="centered h2"style="top:6%; left:40%;color:black;">ADOPTION</div>
+      <img src="assets/adoption.png" class="img-rounded" alt="San Francisco" width="200" height="100"  >
+       </div></a>
+       </div>
+  </div>
+  
+  </div>
+  
+
+  <div class = "container-fluid">
+  <h2 class="text-center">What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Thank you Direct Family Services!"<br><span>Ricardo Rodriguez</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>Erik Michaels</span></h4>
+      </div>
+      <div class="item">
+        <h4>"The documents were on time and copmplete. Iam very satisfied with this service!<br><span>Adrianna Fuentes</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Container (Resources Section) -->
+<div id="services" class="container-fluid text-center assistance" >
+  <h1>WHAT WE BELIEVE IN</h1>
+  <h2>How we offer it</h2>
+  <br>
+  <div class="row ">
+    <div class="col-sm-6">
+      <span class="glyphicon glyphicon-hand-right
+ logo-small"></span>
+      <h4>GUIDANCE</h4>
+      <p class="display-5"> Begining with your initial consultation, a case manager will be there to guide you through every step of the way. Case managers ensure that all of your questions and concerns are  addressed, while they also compile all of the necessary information for the legal staff.</p>
+    </div>
+    <div class="col-sm-6">
+      <span class="glyphicon glyphicon-briefcase logo-small"></span>
+      <h4>PACKAGED SOLUTIONS</h4>
+      <p class="display-5">Direct Family Services is a complete one stop shop for all of your family law document and filing needs. We offer packaged solutions that are time efficient and far more cost effective than traditional law firms.</p>
+    </div>
+    
+  </div>
+  <br><br>
+  <div class="row ">
+    <div class="col-sm-6">
+      <span class="glyphicon glyphicon-earphone logo-small"></span>
+      <h4>CONSTANT CONTACT</h4>
+      <p class="display-5">We believe in constant-contact with our clients. We are attentive to your situaion and make sure you are always informed on the latest news and updates about your case.</p>
+    </div>
+    <div class="col-sm-6">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>WELL-BEING</h4>
+      <p class="display-5">Healthy children and a healthy family begin with you. We strive to make Family law a little less stressful by providing a path for mental health and  well being. Aside from guiding you through the legalities of family law, case managers also serve as emotional support agents, Who provide; tools, tips and resources for you and your family.</p>
+    </div>
+   
+  </div>
+</div>
+
+
+
+
+<!-- Container (Plans Section) -->
+<div id="pricing" class="container-fluid " style="background-color:#9bb7d4;">
+  <div class="text-center">
+    <h1 style="margin-bottom:40px;padding-bottom:60px;">Our Services!</h1>
+ </div>
+  <div class="row slideanim">
+  
+    <div class="text-center ">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <div class="h2" style="color:#fff;">What You Get</div>
+        </div>
+        
+                <div class="panel-body">
+          <h4><strong>-  </strong>Case Manger to answer all of your questions</h4>
+          <h4><strong>- </strong>Access to legal Document Professionals </h4>
+          <h4><strong>- </strong>Documents Prepared</h4>
+         <h4 ><strong>- </strong>Documents filed</h4>
+          </div>
+        <div class="panel-footer">
+            <%= link_to 'Learn More', "#", class: "btn btn-lg" %>
+        </div>
+        
+      </div>
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  
+ <div class"text-center">
+<%= link_to 'Contact Us Now', "#", class: "btn btn-primary btn-lg btn-block" %>
+ </div>
+</div>
+
+
+<!-- Image of location/map -->
+
+
+<div class="container-fluid" style="padding:0px;position:relative">
+  <img src="assets/footer.png" class="hide-footer1" alt="Snow" style="width:100%;">
+    <img src="assets/footer2.png" class="hide-footer2" alt="Snow" style="width:100%;">
+  <div class="footer-pic h4 container-fluid" style="background-color:white">
+   10880 Wilshire Blvd<br> Suite 1101,<br> Los Angeles, CA 90024 <br>866-950-3506
+ </div>
+ 
+</div>
+
+
+<footer class="container-fluid text-center" style="padding:0;">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+    <p>top of page</p>
+  </a>
+  <p>Direct Family Services all rights reserved 2021</p>
+  
+   
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a:not(".dropdown-toggle")') ) {
+        $(this).collapse('hide');
+    }
+});
+</script>
+
+
