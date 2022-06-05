@@ -1,0 +1,74 @@
+<style>
+textarea{
+width:100%;
+}
+</style>
+
+<!-- Container (Contact Section) -->
+
+<div id="contact" class="container-fluid bg-grey" style="margin-top:30px;border-top:none">
+
+ <p id="contactp" class="h4 text-center"> Want to get started now? fill out our Intake Form so that we may begin to prepare your documents.</p>
+ <p class= "text-center">
+   <%= link_to "Go to Intake Form", "#", class: "btn btn-primary bw1 " %>
+ </p>
+    <p id="contactp1" class="text-center h4" style="margin-top:-20px;"> OR leave a quick note below and we will get back to you shortly.</p>
+
+  <h2 class="text-center";">CONTACT</h2>
+  <div class="row" style="margin-top:40px;">
+    <div class="col-md-4">
+      
+       <p class="h4"><span class="glyphicon glyphicon-home"></span> : 10880 Wilshire Blvd</p>
+        <p class="h4" style:"margin-left:30px;"> Suite 1101, Los Angeles, CA 90024</p>
+            <p class="h4"><span class="glyphicon glyphicon-phone"></span> : 866-950-3506</p>
+      <p class="h4"><span class="glyphicon glyphicon-envelope"></span> :  Support@DirectFamilyServices.com</p>
+    </div>
+   
+    <div class="col-md-8 text-center"  >
+    <%= form_with(model: @lead, local: true) do |f| %>
+         <div class= "row" style="margin-top:10px;">
+     <%= f.text_area :name ,maxlength: 255, size: "30x1" ,  placeholder:"Name" %>
+    </div>
+    <div class= "row" style="margin-top:10px;">
+     <%= f.text_area:telephone,maxlength: 255, size: "30x1" ,  placeholder:"Telehone" %>
+    </div>
+    
+      
+    
+        <div class= "row" style="margin-top:10px;">
+        <%= f.text_area :comment , maxlength: 255, size: "30x5 " , placeholder:"Comment" %>
+        </div>
+    
+        <div class= "row" style="margin-top:10px;">
+        <%= f.submit "Submit", class: "btn btn-primary" %>
+        </div>
+</div>
+  </div>
+     
+    <%end%>
+</div>
+<script>
+$(window).on('resize', function() {
+    if($(window).width() > 900) {
+       
+        $('#contactp').addClass('h3');
+        $('#contactp').removeClass('h4');
+       
+        $('#contactp1').addClass('h3');
+        $('#contactp1').removeClass('h4');
+       
+    
+    }else{
+        
+        $('#contactp').removeClass('h3');
+        $('#contactp').addClass('h4');
+        
+        $('#contactp1').removeClass('h3');
+        $('#contactp1').addClass('h4');
+      
+    }
+})
+
+
+
+</script>
