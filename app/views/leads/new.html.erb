@@ -1,6 +1,11 @@
 <style>
 textarea{
 width:100%;
+
+}
+
+.form-s{
+width:19%;
 }
 </style>
 
@@ -32,7 +37,15 @@ width:100%;
     <div class= "row" style="margin-top:10px;">
      <%= f.text_area:telephone,maxlength: 255, size: "30x1" ,  placeholder:"Telehone" %>
     </div>
+        <div class= "row">
+                <p align="left">Please Select your case type: </p>
+  
+    </div>
+       
+    <div class= "row" >
     
+    <%= f.select :case_type, [["Divorce", "Divorce"],["Child Custody", "Child Custody"],  ["Adoption", "Adoption"], ["Visitation", "Visitiation"], ["Child Support", "Child Support"], ["Adoption", "Adoption"]],{} , { :class => 'form-control form-s'}%>
+    </div>
       
     
         <div class= "row" style="margin-top:10px;">
