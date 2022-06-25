@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  
   
  
  root 'static_pages#home'
@@ -7,6 +9,8 @@ Rails.application.routes.draw do
       get '/services', to:'static_pages#services'
       get '/blog', to:'static_pages#blog'
       get '/contact', to:'static_pages#contact'
+      
+      devise_for :user
       
       resources :leads
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
